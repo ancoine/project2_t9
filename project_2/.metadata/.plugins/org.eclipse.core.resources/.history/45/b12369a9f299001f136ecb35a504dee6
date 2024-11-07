@@ -1,0 +1,5 @@
+package com.javeweb.dto.response;
+
+public class BuildingResponse {
+
+}

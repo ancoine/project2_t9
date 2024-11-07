@@ -1,0 +1,13 @@
+package com.javeweb.repository.impl;
+
+import org.springframework.stereotype.Repository;
+
+import com.javeweb.repository.BuildingRepository;
+@Repository
+
+public class BuildingRepositoryImpl implements BuildingRepository {
+	static final String DB_URL = "jdbc:mysql://localhost:3306/estatebasic";
+	static final String USER = "root";
+	static final String PASS = "123456";
+	
+}

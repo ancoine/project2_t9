@@ -1,0 +1,5 @@
+package com.javeweb.service.impl;
+
+public interface BuildingService {
+
+}

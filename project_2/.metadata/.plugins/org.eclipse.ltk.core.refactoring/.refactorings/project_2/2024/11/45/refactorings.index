@@ -1,0 +1,6 @@
+1730949567425	Rename type 'BuildingResponse'
+1730950114956	Encapsulate field 'id, ...'
+1730950412756	Encapsulate field 'NumberOfBasement, ...'
+1730950798231	Encapsulate field 'rentprice, ...'
+1730950831635	Encapsulate field 'servicefee, ...'
+1730950863855	Encapsulate field 'brokeragefee, ...'
