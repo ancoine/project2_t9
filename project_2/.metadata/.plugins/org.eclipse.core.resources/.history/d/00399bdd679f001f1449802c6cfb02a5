@@ -1,0 +1,18 @@
+package com.javeweb.repository.impl;
+
+import java.util.List;
+
+import com.javeweb.repository.DistrictIdRepository;
+import com.javeweb.repository.entity.BuildingEntity;
+
+public class DistrictIdRepositoryImpl implements DistrictIdRepository {
+	static final String DB_URL = "jdbc:mysql://localhost:3306/estatebasic";
+    static final String USER = "root";
+    static final String PASS = "123456";
+	@Override
+	public List<BuildingEntity> findAll(Long id, String name) {
+		StringBuilder sql = new StringBuilder();
+		return null;
+	}
+
+}

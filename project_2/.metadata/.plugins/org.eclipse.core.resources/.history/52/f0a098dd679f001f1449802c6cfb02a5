@@ -1,0 +1,5 @@
+package com.javeweb.repository.entity;
+
+public class DistrictIDEntity {
+
+}

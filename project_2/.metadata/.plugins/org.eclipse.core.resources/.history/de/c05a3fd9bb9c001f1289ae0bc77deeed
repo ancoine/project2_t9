@@ -1,5 +1,0 @@
-package com.javeweb.repository;
-
-public interface BuildingRepository {
-
-}
