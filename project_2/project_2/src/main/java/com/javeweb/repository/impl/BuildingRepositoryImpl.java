@@ -117,14 +117,14 @@ public class BuildingRepositoryImpl implements BuildingRepository {
 			    }
 
 			} catch (SQLException e) {
-			    e.printStackTrace();  // Xử lý ngoại lệ nếu có
+			    e.printStackTrace(); 
 			}
 
 		return results;
 	}
 	public class DataUnit {
 
-	    // Phương thức tùy chỉnh để kiểm tra chuỗi không null và không rỗng
+	  
 	    public static boolean checkData(String data) {
 	        return data != null && !data.trim().isEmpty();
 	    }
