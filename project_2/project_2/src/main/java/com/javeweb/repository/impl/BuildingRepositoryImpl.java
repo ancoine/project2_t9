@@ -80,7 +80,7 @@ public class BuildingRepositoryImpl implements BuildingRepository {
     		where.append("AND renttype.code IN("+String.join(",",code)+")");
     	}
     }
-
+       
 	@Override
 	public List<BuildingEntity> findAll(Map<String, Object> params,List<String> typeCode) {
 		StringBuilder sql = new StringBuilder("SELECT b.*FROM building b");
@@ -112,6 +112,7 @@ public class BuildingRepositoryImpl implements BuildingRepository {
 		         building.setManagerphonenumber(rs.getLong("managerphonenumber"));
 		         building.setStaffId(rs.getInt("staffId"));
 		         building.setTypeCode(rs.getString("typeCode"));
+		         building.setRentArea(rs.getString("rentAreaString"));
 		         results.add(building);
 			    }
 

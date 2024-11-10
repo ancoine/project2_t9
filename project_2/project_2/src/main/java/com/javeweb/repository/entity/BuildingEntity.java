@@ -19,6 +19,7 @@ private String typeCode;
 private Long rentprice;
 private String servicefee;
 private String brokeragefee;
+private String rentArea;
 public String getName() {
 	return name;
 }
@@ -126,5 +127,11 @@ public String getBrokeragefee() {
 }
 public void setBrokeragefee(String brokeragefee) {
 	this.brokeragefee = brokeragefee;
+}
+public String getRentArea() {
+	return rentArea;
+}
+public void setRentArea(String rentArea) {
+	this.rentArea = rentArea;
 }
 }

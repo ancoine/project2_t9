@@ -9,7 +9,7 @@ private String managername;
 private Long managerphonenumber;
 private Double floorarea;
 private Double vacantArea;      
-private Double rentalArea;    
+private String rentalArea;    
 private Long rentPrice;        
 private String serviceFee;  
 private String brokerageFee;
@@ -61,11 +61,11 @@ public Double getVacantArea() {
 public void setVacantArea(Double vacantArea) {
 	this.vacantArea = vacantArea;
 }
-public Double getRentalArea() {
+public String getRentalArea() {
 	return rentalArea;
 }
-public void setRentalArea(Double rentalArea) {
-	this.rentalArea = rentalArea;
+public void setRentalArea(String string) {
+	this.rentalArea = string;
 }
 public Long getRentPrice() {
 	return rentPrice;
@@ -84,6 +84,10 @@ public String getBrokerageFee() {
 }
 public void setBrokerageFee(String string) {
 	this.brokerageFee = string;
+}
+public static String findDistrictNameById(Long districId) {
+	// TODO Auto-generated method stub
+	return null;
 }
 
 

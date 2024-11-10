@@ -14,7 +14,6 @@ import com.javeweb.service.BuildingService;
 public class BuildingServiceImpl implements BuildingService{
     @Autowired
     private BuildingRepository buildingRepository;
-	@Override
 	public List<BuildingResponseDTO> findAll(Map<String, Object> params, List<String> typeCode) {
 		List<BuildingEntity> buildingEntities = buildingRepository.findAll(params, typeCode);
 		List<BuildingResponseDTO> result = new ArrayList<BuildingResponseDTO>();
@@ -22,17 +21,17 @@ public class BuildingServiceImpl implements BuildingService{
 			BuildingResponseDTO buildingResponseDTO = new BuildingResponseDTO();
 			buildingResponseDTO.setId(it.getId());
 			buildingResponseDTO.setName(it.getName());
-            buildingResponseDTO.setAddress(it.getStreet()+""+it.getWard()+""+it.getDistricId());
+			String districtName = BuildingResponseDTO.findDistrictNameById(it.getDistricId());
+	        buildingResponseDTO.setAddress(it.getStreet() + ", " + it.getWard() + ", " + districtName);
             buildingResponseDTO.setNumberOfBasement(it.getNumberOfBasement());
             buildingResponseDTO.setManagername(it.getManagername());
             buildingResponseDTO.setManagerphonenumber(it.getManagerphonenumber());
             buildingResponseDTO.setFloorarea(it.getFloorarea());
             buildingResponseDTO.setVacantArea(null);
-            buildingResponseDTO.setRentalArea(it.getFloorarea());
+            buildingResponseDTO.setRentalArea(it.getRentArea()); 
             buildingResponseDTO.setRentPrice(it.getRentprice());
             buildingResponseDTO.setServiceFee(it.getServicefee());
             buildingResponseDTO.setBrokerageFee(it.getBrokeragefee());
-            
             result.add(buildingResponseDTO);
         }
                      return result;

@@ -19,7 +19,7 @@
     <fullyQualifiedTypeName name="com.javeweb.repository.BuildingRepository"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.javeweb.repository.entity.BuildingEntity"/>
-    <fullyQualifiedTypeName name="com.javeweb.dto.response.BuildingResponseDTO"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="com.javeweb.service.BuildingService"/>
+    <fullyQualifiedTypeName name="com.javeweb.dto.response.BuildingResponseDTO"/>
 </qualifiedTypeNameHistroy>
